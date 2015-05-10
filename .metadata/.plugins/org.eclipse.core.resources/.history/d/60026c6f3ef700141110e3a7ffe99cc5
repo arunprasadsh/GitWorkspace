@@ -6,8 +6,6 @@ import java.util.List;
 
 import com.arun.model.Student;
 import com.arun.util.CompareByFirstName;
-import com.arun.util.CompareByFullName;
-import com.arun.util.CompareBySecondName;
 import com.arun.util.CompareStudentByAge;
 import com.arun.util.StudentComparatorChain;
 
@@ -28,11 +26,7 @@ public class StudentComparatorByMultipleFields {
 		studentList.add(new Student("Ian","Somerhalder",30));
 		studentList.add(new Student("Lee","minho",28));
 		studentList.add(new Student("Surya","Sivakumar",32));
-		Collections.sort(studentList, new StudentComparatorChain(new CompareStudentByAge(),new CompareByFirstName(),new CompareBySecondName()));
-		System.out.println("Sorted Based on following order age,1st name and 2nd name");
-		printList(studentList);
-		Collections.sort(studentList, new StudentComparatorChain(new CompareStudentByAge(),new CompareByFullName()));
-		System.out.println("Sorted Based on following order age,full name");
+		Collections.sort(studentList, new StudentComparatorChain(new CompareStudentByAge(),new CompareByFirstName()));
 		printList(studentList);
 		
 	}
