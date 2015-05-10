@@ -1,0 +1,34 @@
+/**
+ * 
+ */
+package com.arun.learning;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import com.arun.model.Student;
+import com.arun.util.CompareStudentByAge;
+
+/**
+ * @author prabhu
+ *
+ */
+public class StudentComparator {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<Student> studentList = new ArrayList<Student>();
+		studentList.add(new Student("Arun","Prasad",24));
+		studentList.add(new Student("Arun","Prasad",25));
+		studentList.add(new Student("Hardik","Pandya",26));
+		studentList.add(new Student("Parthiv","Ptael",23));
+		System.out.println("Before sort"+studentList.toString());
+	Collections.sort(studentList,new CompareStudentByAge());
+	System.out.println("After sort"+studentList.toString());
+	}
+
+}

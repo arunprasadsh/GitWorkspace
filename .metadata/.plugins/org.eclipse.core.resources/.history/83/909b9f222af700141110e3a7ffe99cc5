@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.arun.util;
+
+import java.util.Comparator;
+
+/**
+ * @author prabhu
+ *
+ */
+public class CompareBySecondName implements Comparator<T> {
+
+}

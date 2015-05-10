@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package com.arun.model;
+
+/**
+ * @author prabhu
+ *
+ */
+public class Student {
+
+	private String firstName;
+	private String secondName;
+	private int age;
+	public String getFirstName() {
+		return firstName;
+	}
+public void Student(String name1,String name2, int age1){
+	
+	this.firstName = name1;
+	this.secondName =name2;
+	this.age=age1;
+}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getSecondName() {
+		return secondName;
+	}
+	public void setSecondName(String secondName) {
+		this.secondName = secondName;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}

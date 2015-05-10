@@ -1,0 +1,12 @@
+/**
+ * 
+ */
+package com.arun.model;
+
+/**
+ * @author prabhu
+ *
+ */
+public class Student {
+
+}

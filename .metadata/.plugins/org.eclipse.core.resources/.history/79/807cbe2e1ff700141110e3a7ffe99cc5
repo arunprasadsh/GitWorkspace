@@ -1,0 +1,14 @@
+/**
+ * 
+ */
+package com.arun.learning;
+
+import java.util.Comparator;
+
+/**
+ * @author prabhu
+ *
+ */
+public class TestComparator implements Comparator<T> {
+
+}
